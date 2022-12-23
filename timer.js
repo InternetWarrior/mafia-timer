@@ -65,9 +65,9 @@ class Timer{
 
 
 
-        if(seconds<=2){
+        if(seconds<=2&&minutes==0){
             timeHtml.style.color = 'red'
-        }else if (seconds<=10){
+        }else if (seconds<=10&&minutes==0){
             timeHtml.style.color = 'yellow'
 
             
