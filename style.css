@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    
 }
 
 
@@ -23,7 +24,7 @@ main{
 }
 
 .timer{
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,13 +37,15 @@ main{
 
 .time{
     display: flex;
+    width: 246px;
+    height: 76px;
     background-color: black;
     color: white;
-    border-radius: 24px;
-    padding-right: 41px;
-    padding-left: 41px;
+    border-radius: 10px;
     font-size: 56px;
     font-weight: 700;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -53,6 +56,7 @@ main{
     color: white;
     font-weight: 700;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .buttons{
@@ -97,29 +101,72 @@ h1{
 }
 
 .vote--btn{
+    display: flex;
+    position: relative;
+    white-space:nowrap;
+    flex-direction: row;
     border: 0;
     padding: 8px 8px 8px 8px;
     background-color: white;
     cursor: pointer;
     border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 5px;
+}
+
+.vote--btn[value="false"]:hover .toolbar{
+    visibility: visible;
+    opacity: 1;
+}
+
+.toolbar{
     display: flex;
     justify-content: center;
-    gap: 8px;
+    align-items: center;
+    position: absolute;
+    background-color: white;
+    padding: 8px;
+    border-radius: 5px;
+    left: 120%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+svg{
+    width: 21px;
+    height: 16px;
+}
+
+.toolbar::before{
+    content: '';
+    position: absolute;
+    border: 4px solid;
+    border-color: #0000 #fff #0000 #0000;
+    right: 100%;
+}
+
+.hello{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    min-width: 16px;
 
 }
 
 
 
 
-.vote--btn::after{
 
-    content: url('./cross.png') ;
-    display: inline-block;
-   }
 
-.vote--btn[value="false"]::after{
-    content: url('./check.png') ;
-    display: inline-block;
+
+
+.vote--btn[value="true"]::after{
+    content: 'Выставлен!' ;
+    margin-right: 8px;
 }
 
 
@@ -158,6 +205,7 @@ small{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 
 .result--btn{
@@ -167,4 +215,46 @@ small{
     color: black;
     font-weight: 700;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
 }
+
+
+
+
+.toolbar2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(36, 36, 36);
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    bottom: 130%;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 300ms ease-in-out;
+}
+
+
+
+
+.toolbar2::before{
+    position: absolute;
+    content: '';
+    border: 8px solid;
+    border-color: rgb(36, 36, 36) #0000 #0000 #0000;
+    top: 100%;
+}
+
+
+
+.result--btn:hover .toolbar2{
+    opacity: 1;
+    visibility: visible;
+}
+
