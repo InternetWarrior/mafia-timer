@@ -58,21 +58,23 @@
             
             <div class="result" value = 'Hey'>Никто не выставлен!</div>
             <div class="result--btns">
-                
-                <button onclick="vote.copyList()" class="result--btn"> <svg id="Layer_1" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m13 4a1 1 0 0 0 1 1h3.966a2.981 2.981 0 0 0 -.811-1.728l-2.284-2.359a3.011 3.011 0 0 0 -1.871-.884zm-2 0v-4h-4a5.006 5.006 0 0 0 -5 5v10a5.006 5.006 0 0 0 5 5h6a5.006 5.006 0 0 0 5-5v-8h-4a3 3 0 0 1 -3-3zm6 20h-9a1 1 0 0 1 0-2h9a3 3 0 0 0 3-3v-11a1 1 0 0 1 2 0v11a5.006 5.006 0 0 1 -5 5z"/></svg>
-                
-                    <div class="toolbar2">Скопировать</div>
-                </button>
-                <button onclick="vote.stop()" class="result--btn"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M15,11.5c.22,6.231,9.399,5.774,8.943-.408l-2.526-8.939c-.45-1.502-1.948-2.403-3.514-2.089l-4.482,.981c-.48-1.6-2.941-1.235-2.922,.455v.185l-4.527,.991c-1.635,.327-2.949,1.522-3.428,3.119L.063,14.069c-.396,2.599,1.85,4.953,4.436,4.931,2.589,.024,4.853-2.35,4.43-4.952L6.294,5.7c.093-.038,.191-.068,.294-.088l3.912-.858V21H5.5c-1.972,.033-1.971,2.967,0,3h13c1.972-.033,1.971-2.967,0-3h-5V4.097l3.922-.86-2.358,7.831c-.042,.14-.063,.286-.063,.433Zm-10.541-1.646l1.31,4.146H3.216l1.243-4.146Zm15.09-3.279l1.25,4.425h-2.583l1.333-4.425Z"/></svg>
-                    
-                    <div class="toolbar2">Прекращение жестикуляции</div>
-                </button>
+                <div class="leftSide">
 
-                <button onclick="vote.copyKill()" class="result--btn">  <svg id="Layer_1" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm1 21.949v-1.949a1 1 0 0 0 -2 0v1.949a10.015 10.015 0 0 1 -8.949-8.949h1.949a1 1 0 0 0 0-2h-1.949a10.015 10.015 0 0 1 8.949-8.949v1.949a1 1 0 0 0 2 0v-1.949a10.015 10.015 0 0 1 8.949 8.949h-1.949a1 1 0 0 0 0 2h1.949a10.015 10.015 0 0 1 -8.949 8.949zm3-9.949a1 1 0 0 1 -1 1h-2v2a1 1 0 0 1 -2 0v-2h-2a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 1 1z"/></svg>
-                
-                
-                    <div class="toolbar2">Килл&Чек</div>
-                </button>
+                    <button onclick="vote.copyList()" class="result--btn"> <svg id="Layer_1" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m13 4a1 1 0 0 0 1 1h3.966a2.981 2.981 0 0 0 -.811-1.728l-2.284-2.359a3.011 3.011 0 0 0 -1.871-.884zm-2 0v-4h-4a5.006 5.006 0 0 0 -5 5v10a5.006 5.006 0 0 0 5 5h6a5.006 5.006 0 0 0 5-5v-8h-4a3 3 0 0 1 -3-3zm6 20h-9a1 1 0 0 1 0-2h9a3 3 0 0 0 3-3v-11a1 1 0 0 1 2 0v11a5.006 5.006 0 0 1 -5 5z"/></svg>
+                        
+                        <div class="toolbar2">Скопировать</div>
+                    </button>
+                    <button onclick="vote.stop()" class="result--btn"><svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24" width="512" height="512"><path d="M15,11.5c.22,6.231,9.399,5.774,8.943-.408l-2.526-8.939c-.45-1.502-1.948-2.403-3.514-2.089l-4.482,.981c-.48-1.6-2.941-1.235-2.922,.455v.185l-4.527,.991c-1.635,.327-2.949,1.522-3.428,3.119L.063,14.069c-.396,2.599,1.85,4.953,4.436,4.931,2.589,.024,4.853-2.35,4.43-4.952L6.294,5.7c.093-.038,.191-.068,.294-.088l3.912-.858V21H5.5c-1.972,.033-1.971,2.967,0,3h13c1.972-.033,1.971-2.967,0-3h-5V4.097l3.922-.86-2.358,7.831c-.042,.14-.063,.286-.063,.433Zm-10.541-1.646l1.31,4.146H3.216l1.243-4.146Zm15.09-3.279l1.25,4.425h-2.583l1.333-4.425Z"/></svg>
+                        
+                        <div class="toolbar2">Прекращение жестикуляции</div>
+                    </button>
+                    
+                    <button onclick="vote.copyKill()" class="result--btn">  <svg id="Layer_1" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1"><path d="m12 0a12 12 0 1 0 12 12 12.013 12.013 0 0 0 -12-12zm1 21.949v-1.949a1 1 0 0 0 -2 0v1.949a10.015 10.015 0 0 1 -8.949-8.949h1.949a1 1 0 0 0 0-2h-1.949a10.015 10.015 0 0 1 8.949-8.949v1.949a1 1 0 0 0 2 0v-1.949a10.015 10.015 0 0 1 8.949 8.949h-1.949a1 1 0 0 0 0 2h1.949a10.015 10.015 0 0 1 -8.949 8.949zm3-9.949a1 1 0 0 1 -1 1h-2v2a1 1 0 0 1 -2 0v-2h-2a1 1 0 0 1 0-2h2v-2a1 1 0 0 1 2 0v2h2a1 1 0 0 1 1 1z"/></svg>
+                        
+                        
+                        <div class="toolbar2">Килл&Чек</div>
+                    </button>
+                </div>
 
 
                 <button onclick="vote.cleanList()" class="result--btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">

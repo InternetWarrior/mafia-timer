@@ -258,3 +258,8 @@ small{
     visibility: visible;
 }
 
+
+.leftSide{
+    display: flex;
+    
+}
