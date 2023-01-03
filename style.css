@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+
     
 }
 
@@ -35,7 +36,7 @@ main{
 }
 
 
-.time{
+.time {
     display: flex;
     width: 246px;
     height: 76px;
@@ -46,6 +47,7 @@ main{
     font-weight: 700;
     align-items: center;
     justify-content: center;
+
 }
 
 
@@ -76,6 +78,10 @@ h1{
     text-align: center;
 }
 
+
+.vote *{
+    box-sizing: border-box;
+}
 
 .vote{
     display: flex;
@@ -167,6 +173,7 @@ svg{
 .vote--btn[value="true"]::after{
     content: 'Выставлен!' ;
     margin-right: 8px;
+    font-size: 13px;
 }
 
 
